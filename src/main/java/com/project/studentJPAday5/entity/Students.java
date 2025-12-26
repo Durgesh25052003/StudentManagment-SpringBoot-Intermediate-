@@ -14,11 +14,14 @@ public class Students {
 
     private String email;
 
+    private String password;
+
     public Students(){};
 
-    public Students(String name,String email){
+    public Students(String name,String email,String password){
         this.name=name;
         this.email=email;
+        this.password=password;
     }
 
     public int getId() {
@@ -40,4 +43,9 @@ public class Students {
     public String getName() {
         return name;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }
